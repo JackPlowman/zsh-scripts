@@ -1,6 +1,9 @@
 # Theme: Powerlevel10k
 ZSH_THEME=powerlevel10k/powerlevel10k
 
+# Aliases
+alias reload="source ~/.zshrc"
+
 # Powerlevel10k configuration
 function aws-status { [ ! -z "$AWS_PROFILE" ] && echo $AWS_PROFILE || echo AWS N/A; }
 POWERLEVEL9K_CUSTOM_AWS=aws-status
