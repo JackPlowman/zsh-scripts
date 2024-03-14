@@ -1,0 +1,4 @@
+function aws-status { [ ! -z "$AWS_PROFILE" ] && echo $AWS_PROFILE || echo AWS N/A; }
+POWERLEVEL9K_CUSTOM_AWS=aws-status
+POWERLEVEL9K_CUSTOM_AWS_BACKGROUND=balck
+POWERLEVEL9K_CUSTOM_AWS_FOREGROUND=yellow
