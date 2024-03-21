@@ -3,8 +3,13 @@ ZSH_THEME=powerlevel10k/powerlevel10k
 
 # Aliases
 alias reload="source ~/.zshrc"
-alias deploy="sh ~/Projects/development-scripts/commit_and_deploy.sh"
 alias lg=lazygit
+
+# Aliases for Development Scripts
+alias commit="sh ~/Projects/development-scripts/commit_and_push.sh"
+alias deploy="sh ~/Projects/development-scripts/commit_and_deploy.sh"
+alias branch_cleanup="sh ~/Projects/development-scripts/remove_all_branches_except_main.sh"
+alias rebase="sh ~/Projects/development-scripts/rebase_and_push.sh"
 
 # Powerlevel10k configuration
 POWERLEVEL9K_NODE_VERSION_PROJECT_ONLY=true
